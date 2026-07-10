@@ -129,7 +129,7 @@ function Navbar() {
 
                 {/* Powerhouse Studios Link */}
                 <Link
-                  to="/projects/powerhouse"
+                  to="/projects/powerhouse-studios"
                   onClick={() => setIsOpen(false)}
                   className="block px-4 py-3 hover:bg-zinc-900 transition-colors"
                 >

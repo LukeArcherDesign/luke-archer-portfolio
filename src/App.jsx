@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop"; // 1. Imported ScrollToTop
 import Overview from "./pages/Overview";
 import Projects from "./pages/Projects";
 import HavenFalls from "./pages/HavenFalls";
@@ -11,6 +12,8 @@ import UxDesign from "./pages/UxDesign";
 function App() {
   return (
     <Router>
+      <ScrollToTop />{" "}
+      {/* 2. Placed inside Router so it can track location changes */}
       <div className="min-h-screen bg-black text-white font-sans">
         <Navbar />
         <main>

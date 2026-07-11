@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // 1. Imported Link component
 import havenFallsImg from "../assets/HF-project-image.png";
 import afterPartyImg from "../assets/TAP-project-image.png";
 import powerhouseImg from "../assets/Powerhouse-project-image.png";
@@ -48,7 +49,6 @@ function Projects() {
               key={index}
               className="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden hover:border-[#a11d40] transition-colors duration-300"
             >
-              {/* Conditional Rendering: Show image if it exists, otherwise use placeholder */}
               {project.image ? (
                 <div className="w-full aspect-[4/3] overflow-hidden border-b border-zinc-800 bg-zinc-900 flex items-center justify-center">
                   <img
@@ -75,7 +75,6 @@ function Projects() {
                   </span>
                 </div>
 
-                {/* Pill Stack List */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.stack.map((tech, i) => (
                     <span
@@ -89,12 +88,13 @@ function Projects() {
 
                 <p className="text-zinc-400 text-sm mb-6">{project.desc}</p>
 
-                <a
-                  href={project.link}
+                {/* 2. Swapped <a> for <Link> and changed 'href' to 'to' */}
+                <Link
+                  to={project.link}
                   className="block w-full text-center py-3 bg-[#8b1535] border border-white text-white font-medium rounded hover:bg-[#a11d40] transition-colors"
                 >
                   &lt;&gt; View Project
-                </a>
+                </Link>
               </div>
             </div>
           ))}

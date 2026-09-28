@@ -37,7 +37,7 @@ function UxDesign() {
               className="w-full px-8 py-6 flex justify-between items-center bg-zinc-900/50 hover:bg-zinc-900 transition-colors text-left"
             >
               <h2 className="text-xl md:text-2xl font-bold text-white tracking-wide">
-                The After Party
+                The After Party (Commercial)
               </h2>
               <svg
                 width="20"
@@ -129,7 +129,7 @@ function UxDesign() {
               className="w-full px-8 py-6 flex justify-between items-center bg-zinc-900/50 hover:bg-zinc-900 transition-colors text-left"
             >
               <h2 className="text-xl md:text-2xl font-bold text-white tracking-wide">
-                STOMPED! Action Sports App
+                STOMPED! - Extreme Sports App (Open Source)
               </h2>
               <svg
                 width="20"
@@ -159,10 +159,10 @@ function UxDesign() {
                 <div className="md:col-span-7 space-y-4">
                   <p className="text-zinc-300 leading-relaxed text-base">
                     A comprehensive UI/UX design system and application
-                    architecture built for a social skateboarding platform. This
-                    blueprint establishes responsive parity across desktop and
-                    mobile interfaces, alongside full Light and Dark mode
-                    environment themes.
+                    architecture built for a social skateboarding, BMX and other
+                    extreme sports platform. This blueprint establishes
+                    responsive parity across desktop and mobile interfaces,
+                    alongside full Light and Dark mode environment themes.
                   </p>
                   <p className="text-zinc-300 leading-relaxed text-base">
                     By mapping the locked-in color palette directly to Tailwind
@@ -209,80 +209,6 @@ function UxDesign() {
                       className="w-full h-full object-contain p-1"
                     />
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* BLOCK 3: PROJECT PROTOTYPES */}
-          <div className="border border-zinc-800 rounded-xl overflow-hidden bg-zinc-950 transition-colors duration-300">
-            <button
-              onClick={() => toggleSection("prototypes")}
-              className="w-full px-8 py-6 flex justify-between items-center bg-zinc-900/50 hover:bg-zinc-900 transition-colors text-left"
-            >
-              <h2 className="text-xl md:text-2xl font-bold text-white tracking-wide">
-                Project Prototypes: My Approach
-              </h2>
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className={`text-[#a11d40] transition-transform duration-300 ${expandedSection === "prototypes" ? "rotate-180" : ""}`}
-              >
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-            </button>
-
-            {/* Collapsible Content Area */}
-            <div
-              className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                expandedSection === "prototypes"
-                  ? "max-h-[600px] border-t border-zinc-900"
-                  : "max-h-0"
-              }`}
-            >
-              <div className="p-8 space-y-6">
-                <p className="text-zinc-300 leading-relaxed text-base">
-                  When developing standalone applications, I build extensive UX
-                  flows to establish structural balance early. Solidifying
-                  component maps and structural architecture charts provides an
-                  active visual map. This detailed workflow dictates both
-                  backend database relationships and frontend asset logic,
-                  ensuring the end-to-end interface runs smoothly, operates
-                  cleanly, and remains entirely aligned with production goals.
-                </p>
-
-                {/* Project Link Button to GitHub */}
-                <div className="pt-2">
-                  <a
-                    href="https://github.com/LukeArcherDesign/haven-falls-ecommerce"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-3 px-6 py-3 bg-[#8b1535] hover:bg-[#a11d40] text-white font-medium rounded-lg border border-white transition-colors duration-300 shadow-md"
-                  >
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 14.7255 3.09032 17.1962 4.85857 19C5.3441 19.4855 5.89437 19.8669 6.5 20.1242" />
-                      <circle cx="7.5" cy="10.5" r="1.5" fill="currentColor" />
-                      <circle cx="11.5" cy="7.5" r="1.5" fill="currentColor" />
-                      <circle cx="16.5" cy="9.5" r="1.5" fill="currentColor" />
-                      <circle cx="15.5" cy="14.5" r="1.5" fill="currentColor" />
-                    </svg>
-                    Haven Falls - GitHub
-                  </a>
                 </div>
               </div>
             </div>

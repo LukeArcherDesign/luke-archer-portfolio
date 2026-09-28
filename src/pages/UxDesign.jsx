@@ -37,7 +37,7 @@ function UxDesign() {
               className="w-full px-8 py-6 flex justify-between items-center bg-zinc-900/50 hover:bg-zinc-900 transition-colors text-left"
             >
               <h2 className="text-xl md:text-2xl font-bold text-white tracking-wide">
-                The After Party (Commercial)
+                The After Party - Podcast Website (Commercial)
               </h2>
               <svg
                 width="20"

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import tapWireframe from "../assets/UX/TAP-Wireframe.png";
-import stompedWireframe from "../assets/UX/Stomped-Wireframe.png"; // <-- Add your Figma screenshot here
+import stompedWireframe from "../assets/UX/Stomped-Wireframe.png";
 
 function UxDesign() {
-  const [expandedSection, setExpandedSection] = useState("after-party");
+  const [expandedSection, setExpandedSection] = useState("stomped");
 
   const toggleSection = (sectionId) => {
     setExpandedSection(expandedSection === sectionId ? null : sectionId);
